@@ -64,11 +64,13 @@ fun PresentationScreen(
                     .height(
                         390.dp
                     )
-                    .background(Color.Transparent),
+                    .background(Color.Gray),
                 contentAlignment = Alignment.Center
             ) { Image(
                 painter = coverImage,
-                contentDescription = "cover image", contentScale = ContentScale.Crop) }
+                contentDescription = "cover image",
+                modifier = Modifier.fillMaxSize(),
+                contentScale = ContentScale.Crop) }
         }
         item {
             Column(
